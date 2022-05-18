@@ -6,10 +6,15 @@ main {
     margin-top: 2em;
 }
 
-header {
-    justify-content: space-between;
-}
-
 .navbar-collapse {
     flex-grow: 0;
+}
+
+.recipe-list ul {
+    list-style: none;
+}
+
+.recipe-list h2,
+.directions-recipe h2 {
+    text-align: center;
 }
