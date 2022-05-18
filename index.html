@@ -14,13 +14,13 @@
 
     <nav class="navbar navbar-expand bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">Let's make a cake</a>
+          <a class="navbar-brand" href="./index.html">Let's make a cake</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               <a class="nav-link" href="./ingredients.html">Ingredients</a>
               <a class="nav-link" href="#">Where to find cakes!</a>
             </div>
@@ -31,41 +31,89 @@
     </header>
 
     <main class="container">
-        <section class="row row-cols-md-3 row-cols-1">
+        <section class="row row-cols-md-3 row-cols-1 mb-3">
             <div>
                 <article class="card p-2">
                     <img src="./imgs/cheesecake.jpeg" alt="cheesecake image" class="height-img">
+
+                    <!-- get updates / modal trigger -->
+                    <section class="bg-light">
+                      <div class="container">
+                        <div class="text-center">
+                        </div>
+                        <div class="row justify-content-center">
+                          <div class="col-md-8 text-center m-3">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">See Recipe!</button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <!-- modal itself -->
+                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title">cheesecake Recipe!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p></p>
+                            <label for="modal-email" class="form-label">Your email address:</label>
+                            <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                 </article>
             </div>
             <div>
                 <article class="card p-2">
                     <img src="./imgs/chocolate-cake.jpeg" alt="chocolate cake" class="height-img">
+                    <button type="button" class="btn btn-outline-primary m-3" data-toggle="modal" data-target="#exampleModalCenter">See Recipe!</button>
                 </article>
             </div>
             <div>
                 <article class="card p-2">
                     <img src="./imgs/chocolate-eclair.jpg" alt="chocolate eclair" class="height-img">
+                    <button type="button" class="btn btn-outline-primary m-3" data-toggle="modal" data-target="#exampleModalCenter">See Recipe!</button>
                 </article>
             </div>
         </section>
 
-        <section class="row row-cols-md-3 row-cols-1">
+        <section class="row row-cols-md-3 row-cols-1 mb-3">
             <div>
                 <article class="card p-2">
                     <img src="./imgs/lemon-tart.jpeg" alt="lemon tart" class="height-img">
+                    <button type="button" class="btn btn-outline-primary m-3" data-toggle="modal" data-target="#exampleModalCenter">See Recipe!</button>
                 </article>
             </div>
             <div>
                 <article class="card p-2">
                     <img src="./imgs/Pain-au-Chocolat.png" alt="pain au chocolat" class="height-img">
+                    <button type="button" class="btn btn-outline-primary m-3" data-toggle="modal" data-target="#exampleModalCenter">See Recipe!</button>
                 </article>
             </div>
             <div>
                 <article class="card p-2">
                     <img src="./imgs/pavlova.jpeg" alt="pavlova" class="height-img">
+                    <button type="button" class="btn btn-outline-primary m-3" data-toggle="modal" data-target="#exampleModalCenter">See Recipe!</button>
                 </article>
             </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script>
+          const tooltips = document.querySelectorAll('.tt')
+          tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+          })
+        </script>
     </main>
+   
   </body>
 </html>
