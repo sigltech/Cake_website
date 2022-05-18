@@ -9,3 +9,7 @@ main {
 header {
     justify-content: space-between;
 }
+
+.navbar-collapse {
+    flex-grow: 0;
+}
