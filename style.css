@@ -1,0 +1,11 @@
+.height-img {
+    height: 250px;
+}
+
+main {
+    margin-top: 2em;
+}
+
+header {
+    justify-content: space-between;
+}
