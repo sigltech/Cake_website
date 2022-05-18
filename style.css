@@ -1,5 +1,5 @@
-.height-img {
-    height: 250px;
+.img-height{
+    height: 300px;
 }
 
 main {
@@ -17,4 +17,11 @@ main {
 .recipe-list h2,
 .directions-recipe h2 {
     text-align: center;
+}
+
+/* responsive design elements */
+
+@media screen and (max-width: 990px) {
+    
+    
 }
