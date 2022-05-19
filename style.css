@@ -1,4 +1,4 @@
-.img-height{
+.height-img{
     height: 300px;
 }
 
@@ -19,14 +19,18 @@ main {
     text-align: center;
 }
 
-/* responsive design elements */
-
-.responsive {
-    display: flex;
-    flex-direction: column-reverse;
+.text-align-center {
+    text-align: center;
 }
 
+/* responsive design elements */
+
+
+
 @media screen and (max-width: 990px) {
-    
+    .responsive {
+        display: flex;
+        flex-direction: row-reverse;
+    } 
     
 }
